@@ -2,6 +2,7 @@ const express = require("express");
 const connectDB = require("./config/dbConnection");
 const dotenv=require("dotenv").config();
 const errorhandler=require("./middelware/errorHandler")
+const validateToken=require("./middelware/validateTokenHandler");
 
 connectDB();
 const app = express();
